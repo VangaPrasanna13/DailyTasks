@@ -1,0 +1,70 @@
+<head>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
+    integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</head>
+<body ng-app="appModule">
+  <div ng-controller="MyController">
+    <h1 class="headerClass">{{header}}</h1>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="justify-content">
+          <button class="buttonClass" ng-click="loadAddWindow()">Add</button>
+          <button class="buttonClass" ng-click="loadViewWindow()">View</button>
+        </div>
+      </div>
+    </div>
+    <form>
+      <div class="form-group">
+        <label>From Date:</label>
+        <input type="date" />
+        <label>To Date:</label>
+        <input type="date" />
+      </div>
+      <div class="form-group">
+        <label style="text-align: center">Date:</label>
+        <input type="date" />
+      </div>
+      <div class="form-group">
+        <label>Task ID:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Task Name:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Assigned By:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Assigned To:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Assigned Date:</label>
+        <input type="date" />
+      </div>
+      <div class="form-group">
+        <label>Staus:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Status Date:</label>
+        <input type="date" />
+      </div>
+      <div class="form-group">
+        <label>Completed Date:</label>
+        <input type="date" />
+      </div>
+      <div class="form-group">
+        <button class="buttonClass">Save</button>
+        <button class="buttonClass">Reset</button>
+        <button class="buttonClass">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
